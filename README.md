@@ -1,6 +1,6 @@
 # Rhythm
  Groove to your favorite beats with Rhythm — a sleek music player crafted with pure frontend magic!
- # 20 july 2025 Audio player webpage
+ # 20 july 2025, Audio player webpage
  This is a simple **HTML/CSS/JS-based audio player** interface with custom controls like:
 
 - ⏮️ Backward
