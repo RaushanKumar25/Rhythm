@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(26, 26, 26);
+}
+
+body {
+    background: linear-gradient(to bottom, gray, yellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-1 {
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3),
+                -5px -5px 15px rgba(255,255,255,0.1);
+    background: linear-gradient(to bottom, yellow, gray);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Optional: Add a card hover bounce */
+/* .box-1:hover {
+    transform: scale(1.02);
+} */
+
+/* Image styling */
+.art img {
+    width: 150px;
+    height: 150px;
+     ;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 5px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+
+/* Optional spacing adjustments */
+.art-name, .prog, .msc {
+    margin-top: 10px;
+}
