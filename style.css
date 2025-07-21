@@ -56,10 +56,22 @@ body {
     margin-top: 10px;
 }
 
-.art-name p {
+.art-name {
+    width: 100%; /* or set a specific width like 300px */
+    overflow: hidden;
     white-space: nowrap;
+    text-align: center; /* to center the text when not moving */
 }
 
+.run {
+    display: inline-block;
+    padding-left: 100%; /* starts off screen right */
+    animation: run 10s linear infinite;
+}
+.run {
+    animation: run 9s linear infinite;
+
+}
 .round{
     animation: round 8s linear infinite;
 }
@@ -73,5 +85,13 @@ body {
     }
 
 }
-   
+
+@keyframes run {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
     
