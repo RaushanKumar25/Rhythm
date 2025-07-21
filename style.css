@@ -55,3 +55,23 @@ body {
 .art-name, .prog, .msc {
     margin-top: 10px;
 }
+
+.art-name p {
+    white-space: nowrap;
+}
+
+.round{
+    animation: round 8s linear infinite;
+}
+
+@keyframes round {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform:rotateZ(360deg);
+    }
+
+}
+   
+    
