@@ -35,6 +35,11 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
+.art {
+    margin-top: 30px;
+}
+
+
 /* Optional: Add a card hover bounce */
 /* .box-1:hover {
     transform: scale(1.02);
@@ -63,6 +68,7 @@ body {
     text-align: center; /* to center the text when not moving */
 }
 
+
 .run {
     display: inline-block;
     padding-left: 100%; /* starts off screen right */
@@ -75,6 +81,96 @@ body {
 .round{
     animation: round 8s linear infinite;
 }
+
+
+.msc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Controls remain same */
+.ctrl {
+    cursor: pointer;
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+.ctrl:hover {
+    transform: scale(1.1);
+    background-color: #ffeb3b;
+}
+
+.ctrl:active {
+    transform: scale(0.9);
+}
+
+i {
+    font-size: 22px
+}
+
+.none {
+  display: none;
+}
+.msc {
+    margin-top: 30px;
+}
+.prog {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    background-color:  rgb(202, 202, 202);
+    border-radius: 5px;
+}
+
+.lineChild {
+    cursor: pointer;
+    position: absolute;
+    border-radius: 10px;
+    background-color: yellow;
+    width: 0%; /* 28 is its full length */
+    height: 0.3rem;
+    transition: width 0.1s;
+
+}
+
+.lineChild::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    cursor: pointer;
+    top: -3px;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+
+
 
 @keyframes round {
     0% {
@@ -94,4 +190,3 @@ body {
         transform: translateX(-100%);
     }
 }
-    
