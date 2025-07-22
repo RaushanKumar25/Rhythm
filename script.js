@@ -12,11 +12,17 @@ const progressBar = document.querySelector('.line');
 
 // Song data
 const songs = [
+    // {
+    //     name: "Elloit James Reay",
+    //     title: "I Think They Call This Love",
+    //     src: "melodies/Elliot James Reay _ I Think They Call This Love _Official Lyric Video_.mp3",
+    //     image: "images/yung kai.jpg"
+    // }
     {
-        name: "Yung Kai",
-        title: "do you think you could love me?",
-        src: "melodies/Elliot James Reay _ I Think They Call This Love _Official Lyric Video_.mp3",
-        image: "images/yung kai.jpg"
+        artist: "Ed Sheeran",
+        title: "Perfect",
+        src: "melodies/Ed Sheeran _ Perfect.mp3",
+        image: "images/ed sheeran-perfect.jpg"
     }
 ];
 

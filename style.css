@@ -6,6 +6,14 @@
     color: rgb(26, 26, 26);
 }
 
+#we {
+    position: absolute;
+    bottom: 250px;
+    font-size: 10px;
+    color: rgb(213, 203, 203);
+    text-align: center;
+}
+
 body {
     background: linear-gradient(to bottom, #3C1053, #DF6589); 
     height: 100vh;
@@ -166,7 +174,7 @@ i {
 
 /* Make sure this exists in your CSS */
 .round {
-    animation: round 8s linear infinite;
+    animation: round 9s linear infinite;
     transform-origin: center center; /* This ensures it rotates around the center */
 }
 
