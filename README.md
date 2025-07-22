@@ -32,3 +32,22 @@ A simple and visually appealing music player built with **HTML**, **CSS**, and *
 - ⭕️ Stylish circular image with song and artist name
 - 🎨 Fully responsive layout with smooth UI
 - 🎶 Font Awesome icons for elegant controls
+  
+ # 22 july, 2025, integrated audio and UI toggle
+  - A play/pause toggle using Font Awesome icons.
+- Displays artist name and song title dynamically.
+- Smooth animations and clean UI.
+- Successfully plays downloaded `.mp3` songs.
+
+# Features Done Today 
+- Integrated audio file successfully (`I Think They Call This Love`).
+- Fixed play/pause toggle with correct class handling.
+- UI transitions smoothened for artist name, image, and title.
+- Added song title dynamically from JavaScript.
+
+# Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Font Awesome
+
