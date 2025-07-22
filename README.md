@@ -21,3 +21,14 @@
 - JavaScript (for audio control)
 - Font Awesome for icons
  
+# 21 july 2025, added HTML structure and fixed play icon alignment
+
+A simple and visually appealing music player built with **HTML**, **CSS**, and **JavaScript**.
+
+# Features
+
+- 🎧 Play and pause your favorite tracks
+- ⏮ Backward and ⏭ Forward buttons for navigation
+- ⭕️ Stylish circular image with song and artist name
+- 🎨 Fully responsive layout with smooth UI
+- 🎶 Font Awesome icons for elegant controls
