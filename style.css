@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, gray, yellow);
+    background: linear-gradient(to bottom, #3C1053, #DF6589); 
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@ body {
     justify-content: center;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3),
                 -5px -5px 15px rgba(255,255,255,0.1);
-    background: linear-gradient(to bottom, yellow, gray);
+    background: linear-gradient(to bottom, #DF6589, #3C1053);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -39,49 +39,33 @@ body {
     margin-top: 30px;
 }
 
-
-/* Optional: Add a card hover bounce */
-/* .box-1:hover {
-    transform: scale(1.02);
-} */
-
-/* Image styling */
 .art img {
     width: 150px;
     height: 150px;
-     ;
     margin-bottom: 20px;
     border-radius: 50%;
-    border: 5px solid yellow;
-    box-shadow: 0 0 10px yellow;
+    border: 5px solid #3C1053;
+    box-shadow: 0 0 10px #3C1053;
 }
 
-/* Optional spacing adjustments */
 .art-name, .prog, .msc {
     margin-top: 10px;
 }
 
 .art-name {
-    width: 100%; /* or set a specific width like 300px */
+    width: 90%;
+    max-width: 300px;
     overflow: hidden;
     white-space: nowrap;
-    text-align: center; /* to center the text when not moving */
+    text-align: center;
+    padding: 0 10px;
 }
 
-
-.run {
+.title {
     display: inline-block;
-    padding-left: 100%; /* starts off screen right */
-    animation: run 10s linear infinite;
+    padding-left: 100%;
+    animation: run 15s linear infinite;
 }
-.run {
-    animation: run 9s linear infinite;
-
-}
-.round{
-    animation: round 8s linear infinite;
-}
-
 
 .msc {
     display: flex;
@@ -91,10 +75,9 @@ body {
     margin-top: 20px;
 }
 
-/* Controls remain same */
 .ctrl {
     cursor: pointer;
-    background-color: yellow;
+    background-color: #DF6589;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -108,7 +91,7 @@ body {
 
 .ctrl:hover {
     transform: scale(1.1);
-    background-color: #ffeb3b;
+    background-color: #8944ae;
 }
 
 .ctrl:active {
@@ -116,77 +99,78 @@ body {
 }
 
 i {
-    font-size: 22px
+    font-size: 22px;
+    color: white;
 }
 
 .none {
-  display: none;
+    display: none;
 }
-.msc {
-    margin-top: 30px;
-}
+
 .prog {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     width: 80%;
 }
+
 .time {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    font-size: 10px;
+    width: 100%;
+    font-size: 12px;
+    color: white;
 }
 
 .line {
     width: 100%;
     height: 5px;
     margin-top: 5px;
-    background-color:  rgb(202, 202, 202);
+    background-color: rgb(202, 202, 202);
     border-radius: 5px;
+    position: relative;
+    cursor: pointer;
 }
 
 .lineChild {
-    cursor: pointer;
     position: absolute;
     border-radius: 10px;
-    background-color: yellow;
-    width: 0%; /* 28 is its full length */
-    height: 0.3rem;
+    background-color: #cb1d51;
+    width: 0%;
+    height: 100%;
     transition: width 0.1s;
-
 }
 
 .lineChild::after {
     content: "";
     position: absolute;
-    background-color: black;
+    background-color: white;
     cursor: pointer;
     top: -3px;
     right: 0;
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    border: 2px solid #3C1053;
 }
 
-
-
-
 @keyframes round {
-    0% {
-        transform: rotateZ(0deg);
-    }
-    100% {
-        transform:rotateZ(360deg);
-    }
-
+    0% { transform: rotateZ(0deg); }
+    100% { transform: rotateZ(360deg); }
 }
 
 @keyframes run {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Make sure this exists in your CSS */
+.round {
+    animation: round 8s linear infinite;
+    transform-origin: center center; /* This ensures it rotates around the center */
+}
+
+@keyframes round {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

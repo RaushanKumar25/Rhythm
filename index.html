@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Rhythm</title>
 </head>
-
 <body>
-    <div class="box centre">
-        <div class="box-1 center">
+    <div class="box">
+        <div class="box-1">
             <h4 id="name">Yung Kai</h4>
             <div class="art">
                 <img class="center round" id="artist" src="images/yung kai.jpg" alt="">
@@ -19,36 +20,27 @@
             </div>
             <div class="prog">
                 <div class="time">
-                    <div class="start">
-                        <p id="start">0:00</p>
-                    </div>
-                    <div class="end">
-                        <p id="end">0:00</p>
-                    </div>
+                    <span id="start">0:00</span>
+                    <span id="end">0:00</span>
                 </div>
                 <div class="line">
                     <div class="lineChild"></div>
                 </div>
             </div>
-            <div class="msc center">
-                <div class="ctrl central" onclick="backward()">
-                <i class="fa-solid fa-backward-step"></i>
-
+            <div class="msc">
+                <div class="ctrl" onclick="backward()">
+                    <i class="fa-solid fa-backward-step"></i>
                 </div>
-                <div class="ctrl center" id="playsong">
-  <i class="fa-solid fa-play"></i>
-  
-</div>
-
-                <div class="ctrl center" onclick="forward()">
-                 <i class="fa-solid fa-forward-step"></i>
-</div>
-
+                <div class="ctrl" id="playsong">
+                    <i class="fa-solid fa-play" id="playBtn"></i>
+                    <i class="fa-solid fa-pause none" id="pauseBtn"></i>
+                </div>
+                <div class="ctrl" onclick="forward()">
+                    <i class="fa-solid fa-forward-step"></i>
+                </div>
             </div>
-            <audio src=""></audio>
-          
+            <audio id="audio" src="melodies/Elliot James Reay _ I Think They Call This Love _Official Lyric Video_.mp3"></audio>
         </div>
     </div>
-    
 </body>
 </html>
