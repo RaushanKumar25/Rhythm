@@ -63,7 +63,7 @@ const songs = [
         artist: "Yaseer Desai, Neha Kakkar",
         title: "Dil Ko Karar Aaya",
         src: "melodies/Dil Ko Karar Aaya (Lyrics) - Sidharth Shukla & Neha Sharma  Neha Kakkar & YasserDesai.mp3",
-        image: "images/shadi mein zaroor aana.jpg"
+        image: "images/dil ko karar aaya.jpg"
     },
     {
         artist: "Arijit Singh",
@@ -106,6 +106,10 @@ function loadSong(song) {
     title.textContent = song.title;
     artistImg.src = song.image;
     audio.src = song.src;
+
+    audio.load();
+    
+    updateBackground(song.image);
     
     audio.addEventListener('loadedmetadata', () => {
         endTime.textContent = formatTime(audio.duration);
@@ -167,6 +171,13 @@ function removeEffect() {
     updateProgress(); // Update time display
 }
 
+// Auto-skip broken files
+audio.addEventListener('error', () => {
+    console.log("Skipping unplayable file:", songs[currentSongIndex].src);
+    forward(); // Jump to next song automatically
+});
+
+
 // Event listeners
 playSong.addEventListener('click', togglePlay);
 progressBar.addEventListener('click', setProgress);
@@ -175,3 +186,36 @@ audio.addEventListener('ended', forward); // Auto-play next song when current en
 
 // Initialize player with first song
 loadSong(songs[currentSongIndex]);
+
+
+// function loadSong(song) {
+//     // Your existing song-loading code...
+//     updateBackground(song.image); // Add this line
+// }
+
+
+
+// New function to handle background updates
+function updateBackground(imagePath) {
+    const img = new Image();
+    img.crossOrigin = "Anonymous"; // Fixes CORS issues
+    img.src = imagePath;
+
+    img.onload = function() {
+        const colorThief = new ColorThief();
+        const [r, g, b] = colorThief.getColor(img); // Dominant color
+
+        // Convert RGB to HEX
+        const hexColor = `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
+        
+        // Apply to background
+        document.body.style.background = `
+            linear-gradient(135deg, ${hexColor} 0%, #000000 100%)
+        `;
+    };
+}
+
+
+
+
+

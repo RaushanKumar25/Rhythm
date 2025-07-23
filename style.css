@@ -148,6 +148,8 @@ i {
     width: 0%;
     height: 100%;
     transition: width 0.1s;
+     
+    
 }
 
 .lineChild::after {
@@ -160,8 +162,25 @@ i {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 2px solid #5a2975;
+    border: 2px solid #5a2975; */
+    
 }
+
+
+
+
+.box-1 {
+    
+    animation: pulseGlow 6s infinite ease-in-out;
+}
+
+body {
+    transition: 1.5s ease-in-out;
+    background-size: 400% 400%; /* For gradient animations */
+}
+
+
+
 
 
 @keyframes pulseGlow {
@@ -178,13 +197,6 @@ i {
                     0 0 20px rgba(255, 255, 255, 0.2);
     }
 }
-
-.box-1 {
-    
-    animation: pulseGlow 6s infinite ease-in-out;
-}
-
-
 
 @keyframes round {
     0% { transform: rotateZ(0deg); }
