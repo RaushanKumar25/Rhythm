@@ -45,7 +45,7 @@ A simple and visually appealing music player built with **HTML**, **CSS**, and *
 - UI transitions smoothened for artist name, image, and title.
 - Added song title dynamically from JavaScript.
 
-  # 23 july, 2025 - Add animated box shadow and gradient background effect
+# 23 july, 2025 - Add animated box shadow and gradient background effect
 
 This update introduces a visually engaging animation effect to the music player container, enhancing the user experience with smooth transitions and a vibrant gradient background.
 
@@ -64,3 +64,39 @@ This update introduces a visually engaging animation effect to the music player 
 - JavaScript
 - Font Awesome
 
+# 24 july, 2025 - Added full playlist of 10 songs to music player with artist info and album art.
+
+# Features
+- Play / Pause functionality
+- Progress bar to seek music
+- Artist name and album image
+- Auto-play next song after one ends
+- Fully responsive layout
+- Keyboard and click support
+
+## 🎵 Playlist
+
+| No. | Title                               | Artist                             |
+|-----|-------------------------------------|------------------------------------|
+| 1.  | I Think They Call This Love         | Elliot James Reay                  |
+| 2.  | Raataan Lambiyan                    | Jubin Nautiyal, Asees Kaur         |
+| 3.  | Perfect                             | Ed Sheeran                         |
+| 4.  | Hasi Ban Gaye (Male Version)        | Ami Mishra, Kunaal Vermaa          |
+| 5.  | Tere Pyaar Main                     | Kaavish                            |
+| 6.  | Tadpa Lo                            | Lata Mangeshkar                    |
+| 7.  | Main Hoon Saath Tere                | Arijit Singh                       |
+| 8.  | Dil Ko Karar Aaya                   | Yasser Desai, Neha Kakkar          |
+| 9.  | Raanjhana                           | Arijit Singh                       |
+| 10. | Paper Man (Bollywood Mashup)        | Various Artists                    |
+
+-More to come
+
+Coming Soon:-
+
+:Shuffle mode
+
+:Volume control
+
+:Mobile controls (swipe gestures)
+
+:Download option for offline mode
