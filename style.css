@@ -180,14 +180,9 @@ i {
 }
 
 .box-1 {
-    /* your existing styles */
+    
     animation: pulseGlow 6s infinite ease-in-out;
 }
-
-
-
-
-
 
 
 
@@ -201,13 +196,16 @@ i {
     100% { transform: translateX(-100%); }
 }
 
-/* Make sure this exists in your CSS */
+
 .round {
-    animation: round 9s linear infinite;
-    transform-origin: center center; /* This ensures it rotates around the center */
+    animation: round 15s linear infinite;
+    transform-origin: center center; 
 }
 
 @keyframes round {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+
+
