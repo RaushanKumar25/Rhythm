@@ -45,7 +45,20 @@ A simple and visually appealing music player built with **HTML**, **CSS**, and *
 - UI transitions smoothened for artist name, image, and title.
 - Added song title dynamically from JavaScript.
 
-# Technologies Used
+  # 23 july, 2025 - Add animated box shadow and gradient background effect
+
+This update introduces a visually engaging animation effect to the music player container, enhancing the user experience with smooth transitions and a vibrant gradient background.
+
+## ✨ Features Added
+
+- **Gradient Background**  
+  A seamless vertical gradient blends from #DF6589 to #ff3c3c, passing through rich pink tones.
+
+- **Soft Shadow Effects**  
+  Subtle inner and outer shadows provide a neumorphic feel for a modern aesthetic.
+
+- **Animation on Hover**  
+  A smooth `transform` transition is added to allow future expansion (e.g., scaling or rotating).
 - HTML5
 - CSS3
 - JavaScript
