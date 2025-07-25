@@ -204,6 +204,7 @@ function updateBackground(imagePath) {
     img.onload = function() {
         const colorThief = new ColorThief();
         const [r, g, b] = colorThief.getColor(img); // Dominant color
+        
 
         // Convert RGB to HEX
         const hexColor = `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
@@ -211,6 +212,7 @@ function updateBackground(imagePath) {
         // Apply to background
         document.body.style.background = `
             linear-gradient(135deg, ${hexColor} 0%, #000000 100%)
+
         `;
     };
 }
