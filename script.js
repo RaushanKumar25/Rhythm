@@ -16,6 +16,12 @@ let currentSongIndex = 0;
 
 // Song data
 const songs = [
+     {
+        artist: "Shreya Ghoshal, Irsad Kamil",
+        title: "Saiyaara reprise-Female",
+        src: "melodies/Saiyaara (Reprise - Female Version) Lyrics - Shreya Ghoshal, Faheem Abdullah.mp3",
+        image: "images/Saiyaara.jpg"
+    },
     {
         artist: "Elliot James Reay",
         title: "I Think They Call This Love",
@@ -47,6 +53,12 @@ const songs = [
         image: "images/kaavish.jpg"
     },
     {
+        artist: "Arijit Singh",
+        title: "Qayde Se",
+        src: "melodies/Qayde Se (Lyrical Video)_ Arijit Singh  Pritam  Amitabh Bhattacharya  MetroIn Dino  Anurag Basu.mp3",
+        image: "images/metro in dino.jpg"
+    },
+    {
         artist: "lata mangeshkar",
         title: "Tadpa Lo",
         src: "melodies/Tadpaoge Tadpa Lo - Lyrics  Barkha  Lata Mangeshkar  Trending Songs  Old Hindi Songs.mp3",
@@ -71,6 +83,13 @@ const songs = [
         src: "melodies/Raanjhana  Arijit Singh  Hina Khan & Priyank Sharmaaa  Asad Khan  Raqueeb Alam  Full Audio.mp3",
         image: "images/raanjhana.jpg"
     },
+    {
+        artist: "Lata Mangeshkar",
+        title: "Itna Na Mujhse Tu Pyar Badha",
+        src: "melodies/Itna na Mujhse tu pyar badha  Lata Mangeshkar.mp3",
+        image: "images/itna na mujhse tu pyar badha.webp"
+    },
+    
     
     {
         artist: "Bollywood Mashup",
