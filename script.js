@@ -99,14 +99,14 @@ const songs = [
     },
 ];
 
-// Format time (seconds to mm:ss)
+
 function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60);
     const secs = Math.floor(seconds % 60);
     return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
 }
 
-// Update progress bar
+
 function updateProgress() {
     const currentTime = audio.currentTime;
     const duration = audio.duration;
@@ -153,7 +153,7 @@ function togglePlay() {
     }
 }
 
-// Set progress bar when clicked
+
 function setProgress(e) {
     const width = this.clientWidth;
     const clickX = e.offsetX;
@@ -161,7 +161,7 @@ function setProgress(e) {
     audio.currentTime = (clickX / width) * duration;
 }
 
-// Next song function
+
 function forward() {
     currentSongIndex = (currentSongIndex + 1) % songs.length;
     loadSong(songs[currentSongIndex]);
@@ -170,7 +170,7 @@ function forward() {
     }
 }
 
-// Previous song function
+
 function backward() {
     currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
     loadSong(songs[currentSongIndex]);
@@ -179,7 +179,7 @@ function backward() {
     }
 }
 
-// Reset function
+
 function removeEffect() {
     audio.pause();
     audio.currentTime = 0;
@@ -187,48 +187,44 @@ function removeEffect() {
     playBtn.classList.remove('none');
     pauseBtn.classList.add('none');
     artistImg.classList.remove('round');
-    updateProgress(); // Update time display
+    updateProgress(); 
 }
 
-// Auto-skip broken files
+
 audio.addEventListener('error', () => {
     console.log("Skipping unplayable file:", songs[currentSongIndex].src);
-    forward(); // Jump to next song automatically
+    forward(); 
 });
 
 
-// Event listeners
+
 playSong.addEventListener('click', togglePlay);
 progressBar.addEventListener('click', setProgress);
 audio.addEventListener('timeupdate', updateProgress);
-audio.addEventListener('ended', forward); // Auto-play next song when current ends
+audio.addEventListener('ended', forward); 
 
-// Initialize player with first song
+
 loadSong(songs[currentSongIndex]);
 
 
-// function loadSong(song) {
-//     // Your existing song-loading code...
-//     updateBackground(song.image); // Add this line
-// }
 
 
 
-// New function to handle background updates
+
 function updateBackground(imagePath) {
     const img = new Image();
-    img.crossOrigin = "Anonymous"; // Fixes CORS issues
+    img.crossOrigin = "Anonymous"; 
     img.src = imagePath;
 
     img.onload = function() {
         const colorThief = new ColorThief();
-        const [r, g, b] = colorThief.getColor(img); // Dominant color
+        const [r, g, b] = colorThief.getColor(img); 
         
 
-        // Convert RGB to HEX
+       
         const hexColor = `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
         
-        // Apply to background
+        
         document.body.style.background = `
             linear-gradient(135deg, ${hexColor} 0%, #000000 100%)
 
