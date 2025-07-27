@@ -100,3 +100,5 @@ Coming Soon:-
 :Mobile controls (swipe gestures)
 
 :Download option for offline mode
+
+# Hello from my phone! 📱✨
