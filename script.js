@@ -26,7 +26,7 @@ const songs = [
         artist: "Elliot James Reay",
         title: "I Think They Call This Love",
         src: "melodies/Elliot James Reay _ I Think They Call This Love _Official Lyric Video_.mp3",
-        image: "images/yung kai.jpg"
+        image: "images/i think they call this love .jpg"
     },
     {
         artist: "Jubin Nautiyal, Asees Kaur",
@@ -52,12 +52,14 @@ const songs = [
         src: "melodies/Kaavish - Tere Pyaar Main.mp3",
         image: "images/kaavish.jpg"
     },
+   
     {
         artist: "Arijit Singh",
         title: "Qayde Se",
         src: "melodies/Qayde Se (Lyrical Video)_ Arijit Singh  Pritam  Amitabh Bhattacharya  MetroIn Dino  Anurag Basu.mp3",
         image: "images/metro in dino.jpg"
     },
+    
     {
         artist: "lata mangeshkar",
         title: "Tadpa Lo",
@@ -234,5 +236,39 @@ function updateBackground(imagePath) {
 
 
 
+function createBubbles() {
+  const bubblesContainer = document.querySelector('.bubbles');
+  const bubbleCount = 15; // Adjust number of bubbles
+  
+  // Clear existing bubbles
+  bubblesContainer.innerHTML = '';
+  
+  // Create bubbles
+  for (let i = 0; i < bubbleCount; i++) {
+    const bubble = document.createElement('div');
+    bubble.classList.add('bubble');
+    
+    // Random properties
+    const size = Math.random() * 100 + 50; // 50-150px
+    const posX = Math.random() * 100; // 0-100% width
+    const duration = Math.random() * 20 + 10; // 10-30s
+    const delay = Math.random() * 5; // 0-5s delay
+    
+    bubble.style.width = `${size}px`;
+    bubble.style.height = `${size}px`;
+    bubble.style.left = `${posX}%`;
+    bubble.style.animationDuration = `${duration}s`;
+    bubble.style.animationDelay = `${delay}s`;
+    
+    // Color variation (optional)
+    const hue = Math.random() * 60 + 280; // Purple-pink range
+    bubble.style.background = `hsla(${hue}, 80%, 70%, 0.2)`;
+    
+    bubblesContainer.appendChild(bubble);
+  }
+}
+
+// Initialize on load
+window.addEventListener('load', createBubbles);
 
 
