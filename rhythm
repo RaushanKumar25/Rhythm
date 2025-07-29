@@ -1,0 +1,57 @@
+# Until We Meet Again 🎶
+
+**Until We Meet Again** is a simple yet soulful web-based music player built with HTML, CSS, and JavaScript.  
+It features smooth playback, an aesthetic UI, and a calming vibe — perfect for late-night tunes or peaceful evenings.
+
+---
+
+## 🔥 Features
+
+- Play/Pause functionality
+- Custom song list
+- Live progress bar
+- Auto-play next track
+- Responsive UI
+- Ed Sheeran's *Perfect* as a default track
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3 (with animations)
+- JavaScript (vanilla)
+
+---
+
+## 📂 How to Use
+
+1. Clone or download the repository.
+2. Open `index.html` in your browser.
+3. Enjoy the music!
+
+---
+
+## ✨ Inspiration
+
+> *“Until we meet again… let the music fill the silence.”*
+
+---
+
+## 🙌 Credits
+
+- Ed Sheeran – "Perfect"
+- UI inspired by modern minimalistic players
+
+---
+
+## 📌 Note
+
+This project is created for learning and practice. Music used is for demo purposes only.
+
+---
+
+## 📅 Updated on
+
+`29 July 2025`
+
