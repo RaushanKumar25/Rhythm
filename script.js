@@ -10,7 +10,7 @@ const startTime = document.getElementById('start');
 const endTime = document.getElementById('end');
 const lineChild = document.querySelector('.lineChild');
 const progressBar = document.querySelector('.line');
-// console.log(songs);
+
 
 let currentSongIndex = 0;
 
@@ -238,21 +238,21 @@ function updateBackground(imagePath) {
 
 function createBubbles() {
   const bubblesContainer = document.querySelector('.bubbles');
-  const bubbleCount = 15; // Adjust number of bubbles
+  const bubbleCount = 15; 
   
-  // Clear existing bubbles
+  
   bubblesContainer.innerHTML = '';
   
-  // Create bubbles
+  
   for (let i = 0; i < bubbleCount; i++) {
     const bubble = document.createElement('div');
     bubble.classList.add('bubble');
     
-    // Random properties
-    const size = Math.random() * 100 + 50; // 50-150px
-    const posX = Math.random() * 100; // 0-100% width
-    const duration = Math.random() * 20 + 10; // 10-30s
-    const delay = Math.random() * 5; // 0-5s delay
+    
+    const size = Math.random() * 100 + 50; 
+    const posX = Math.random() * 100; 
+    const duration = Math.random() * 20 + 10; 
+    const delay = Math.random() * 5; 
     
     bubble.style.width = `${size}px`;
     bubble.style.height = `${size}px`;
@@ -260,15 +260,15 @@ function createBubbles() {
     bubble.style.animationDuration = `${duration}s`;
     bubble.style.animationDelay = `${delay}s`;
     
-    // Color variation (optional)
-    const hue = Math.random() * 60 + 280; // Purple-pink range
+    
+    const hue = Math.random() * 60 + 280; 
     bubble.style.background = `hsla(${hue}, 80%, 70%, 0.2)`;
     
     bubblesContainer.appendChild(bubble);
   }
 }
 
-// Initialize on load
+
 window.addEventListener('load', createBubbles);
 
 
